@@ -41,14 +41,17 @@
     <link rel="stylesheet" href="style/components/ld-header.css">
 
     <!-- PAGES -->
-    <link rel="stylesheet" href="style/pages/create.css">
+    <link rel="stylesheet" href="style/pages/project-create-edit.css">
 
     <!-- TRUMPS -->
+
+    <!-- SCRIPTS-->
+    <script src="scripts/project-create-edit.js"></script>
 
 </head>
 
 <body>
-    <div class="ld-create">
+    <div class="ld-project-create-edit">
         <div class="ld-wrapper">
             <header class="ld-header">
                 <div class="wrapper">
@@ -63,15 +66,14 @@
                     keyboard_arrow_left
                 </a>
                 <div class="left">
-                    <h1 class="main-title">
-                        Vamos cadastrar seu novo projeto!
+                    <h1 class="main-title" id="main-title">
                     </h1>
 
                     <input type="text" class="ld-input" placeholder="Titulo">
                     <input type="text" class="ld-input" placeholder="Custo Total">
                     <textarea type="text" class="ld-input" placeholder="Descrição"></textarea>
 
-                    <button class="ld-button">Continuar</button>
+                    <button class="ld-button" id="action-button"></button>
 
                 </div>
                 <div class="right">
