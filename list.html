@@ -46,6 +46,9 @@
 
     <!-- TRUMPS -->
 
+    <!-- SCRIPTS -->
+    <script src="scripts/list.js"></script>
+
 </head>
 
 <body>
@@ -62,8 +65,8 @@
 
                     <div class="user">
                         <div class="info">
-                            <span class="name">André Henrique</span>
-                            <span class="role">Desenvolvedor</span>
+                            <span id="name" class="name"></span>
+                            <span id="role" class="role"></span>
                         </div>
                         <div class="photo-wrapper">
                             <img src="https://st.depositphotos.com/1269204/1219/i/600/depositphotos_12196477-stock-photo-smiling-men-isolated-on-the.jpg"
@@ -77,7 +80,7 @@
                 <div class="title-button">
                     <h1 class="title">Projetos</h1>
                     <div class="button-wrapper">
-                        <button class="ld-button -small">Novo Projeto</button>
+                        <a href="project-create-edit.html" class="ld-button -small">Novo Projeto</a>
                     </div>
                 </div>
 
@@ -90,39 +93,17 @@
                                 <div>Ações</div>
                             </div>
                         </div>
-                        <div class="body">
-                            <div class="row">
-                                <div class="title-description">
-                                    <h6 class="title">Plataforma de Educação</h6>
-                                    <p class="description">Uma bela descrição do projeto você pode encontrar nesta parte
-                                        da tabela</p>
-                                </div>
-                                <div class="price">R$ 10000000</div>
-                                <div class="actions">
-                                    <span class="edit material-icons">edit</span>
-                                    <span class="delete material-icons">delete</span>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="title-description">
-                                    <h6 class="title">Plataforma de Educação</h6>
-                                    <p class="description">Uma bela descrição do projeto você pode encontrar nesta parte
-                                        da tabela</p>
-                                </div>
-                                <div class="price">R$ 10000000</div>
-                                <div class="actions">
-                                    <span class="edit material-icons">edit</span>
-                                    <span class="delete material-icons">delete</span>
-                                </div>
-                            </div>
+                        <div class="body" id="table-body">
+                            <!--O Conteúdo da tabela está sendo invocado pelo list.js via querySelector-->
                         </div>
                     </div>
                 </div>
-
-            </main>
-
         </div>
+    </div>
+
+    </main>
+
+    </div>
     </div>
 </body>
 
